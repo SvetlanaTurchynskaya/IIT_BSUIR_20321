@@ -3,8 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace Lab_1.Controllers
+
 {
     public class HomeController : Controller
+
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -15,6 +17,7 @@ namespace Lab_1.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Text"] = "Лабораторная работа 2";
             return View();
         }
 
