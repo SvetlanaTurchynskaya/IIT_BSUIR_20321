@@ -7,6 +7,7 @@ namespace Lab_1.Controllers
 {
     public class HomeController : Controller
 
+
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -32,4 +33,11 @@ namespace Lab_1.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
+
+
+
+
+
+
+
 }
